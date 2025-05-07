@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Módulo de Verificación de Información</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f9fafb;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="data:text/html;charset=utf-8,
+    <!-- Aquí comienza el contenido del HTML original -->
+    <!DOCTYPE html>
+    <html lang='es'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Herramientas de Verificación de Información</title>
+        <script src='https://cdn.tailwindcss.com'></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+        <style>
+            /* Estilos personalizados adicionales */
+            body { font-family: 'Inter', sans-serif; }
+            .section-card { @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300; }
+            .nav-button { @apply px-4 py-2 text-sm font-medium text-gray-700 hover:bg-sky-100 hover:text-sky-700 rounded-lg transition-colors duration-200; }
+            .nav-button.active { @apply bg-sky-600 text-white hover:bg-sky-700; }
+            .content-section { display: none; }
+            .content-section.active { display: block; }
+            #message-box { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: #333; color: white; padding: 15px 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1000; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; font-size: 1rem; }
+            #message-box.show { opacity: 1; visibility: visible; }
+        </style>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: { sans: ['Inter', 'sans-serif'] },
+                        colors: {
+                            sky: {
+                                50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc',
+                                400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1',
+                                800: '#075985', 900: '#0c4a6e'
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body class='bg-slate-100 text-slate-800'>
+        <header class='bg-sky-700 text-white p-6 shadow-md sticky top-0 z-50'>
+            <div class='container mx-auto flex flex-col sm:flex-row justify-between items-center'>
+                <h1 class='text-2xl sm:text-3xl font-bold'><i class='fas fa-shield-alt mr-2'></i>Verificación de Información en la Era Digital</h1>
+                <p class='text-sm mt-2 sm:mt-0'>Módulo: Educación para los Medios</p>
+            </div>
+        </header>
+        <div class='container mx-auto p-4 sm:p-6 lg:p-8'>
+            <nav class='bg-white p-4 rounded-xl shadow-lg mb-6 sticky top-[calc(6rem+1px)] z-40 overflow-x-auto'>
+                <ul class='flex space-x-2 sm:space-x-4 justify-center'>
+                    <li><button data-target='inicio' class='nav-button active'><i class='fas fa-home mr-1 sm:mr-2'></i>Inicio</button></li>
+                    <li><button data-target='busqueda-avanzada' class='nav-button'><i class='fas fa-search-plus mr-1 sm:mr-2'></i>Búsqueda Avanzada</button></li>
+                    <li><button data-target='busqueda-inversa' class='nav-button'><i class='fas fa-image mr-1 sm:mr-2'></i>Búsqueda Inversa</button></li>
+                    <li><button data-target='analisis-multimedia' class='nav-button'><i class='fas fa-video mr-1 sm:mr-2'></i>Análisis Multimedia</button></li>
+                    <li><button data-target='verificacion-dominios' class='nav-button'><i class='fas fa-globe mr-1 sm:mr-2'></i>Verificación de Dominios</button></li>
+                    <li><button data-target='fact-checking' class='nav-button'><i class='fas fa-check-double mr-1 sm:mr-2'></i>Fact-Checking</button></li>
+                    <li><button data-target='materiales' class='nav-button'><i class='fas fa-book-open mr-1 sm:mr-2'></i>Materiales</button></li>
+                    <li><button data-target='autoevaluacion' class='nav-button'><i class='fas fa-question-circle mr-1 sm:mr-2'></i>Autoevaluación</button></li>
+                </ul>
+            </nav>
+            <main id='content-area'>
+                <!-- Aquí se insertan las secciones del módulo -->
+                <!-- Para simplificar, solo se incluye la primera sección por defecto -->
+                <section id='inicio' class='content-section active'>
+                    <div class='section-card'>
+                        <h2 class='text-2xl font-semibold text-sky-700 mb-4'>Bienvenido/a al Módulo de Verificación</h2>
+                        <p class='mb-4'>En un mundo saturado de información, aprender a verificar la autenticidad y fiabilidad de los contenidos es una habilidad crucial. Esta aplicación te guiará a través de diversas herramientas y técnicas para combatir la desinformación y fortalecer tu alfabetización mediática.</p>
+                        <p class='mb-4'>Explora las diferentes secciones para descubrir cómo utilizar motores de búsqueda avanzada, realizar búsquedas inversas de imágenes, analizar videos, verificar la credibilidad de sitios web y conocer plataformas de fact-checking.</p>
+                        <div class='bg-sky-50 p-4 rounded-lg border border-sky-200'>
+                            <h3 class='font-semibold text-sky-600 mb-2'><i class='fas fa-bullseye mr-2'></i>Objetivo del Módulo:</h3>
+                            <p>Enseñar de manera dinámica y visual el uso de herramientas de verificación de información, en el contexto de la lucha contra la desinformación, dirigido a maestrantes de Tecnologías Aplicadas a la Educación.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Puedes agregar más secciones aquí si lo deseas -->
+            </main>
+        </div>
+        <footer class='bg-slate-800 text-slate-300 text-center p-6 mt-10'>
+            <p class='text-sm'>&copy; <span id='currentYear'></span> | Diseño Instruccional Interactivo para la Alfabetización Mediática.</p>
+            <p class='text-xs mt-1'>Desarrollado para la Maestría en Tecnologías Aplicadas a la Educación.</p>
+        </footer>
+        <div id='message-box'></div>
+        <script>
+            const navButtons = document.querySelectorAll('.nav-button');
+            const contentSections = document.querySelectorAll('.content-section');
+            const messageBox = document.getElementById('message-box');
+
+            // Mostrar la sección activa
+            document.getElementById('inicio').classList.add('active');
+            navButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    navButtons.forEach(btn => btn.classList.remove('active'));
+                    contentSections.forEach(section => section.classList.remove('active'));
+                    button.classList.add('active');
+                    const target = button.getAttribute('data-target');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+
+            // Año actual
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Función mostrar mensaje
+            function showMessage(message) {
+                messageBox.textContent = message;
+                messageBox.classList.add('show');
+                setTimeout(() => messageBox.classList.remove('show'), 3000);
+            }
+        </script>
+    </body>
+    </html>
+    <!-- Fin del contenido del HTML original -->
+    " allowfullscreen></iframe>
+</body>
+</html>
